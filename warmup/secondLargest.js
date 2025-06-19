@@ -3,6 +3,10 @@
  */
 
 function secondLargest(arr) {
+	if (arr.length < 2) {
+		return null;
+	}
+
 	let firstLargest = -Infinity;
 	let secondLargestNumber = -Infinity;
 
@@ -10,7 +14,7 @@ function secondLargest(arr) {
 		if (arr[i] > firstLargest) {
 			secondLargestNumber = firstLargest;
 			firstLargest = arr[i];
-		} else if (arr[i] > secondLargestNumber) {
+		} else if (arr[i] > secondLargestNumber && firstLargest != secondLargestNumber) {
 			secondLargestNumber = arr[i]
 		}
 	}
