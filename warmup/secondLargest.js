@@ -10,8 +10,8 @@ function secondLargest(arr) {
 		if (arr[i] > firstLargest) {
 			secondLargestNumber = firstLargest;
 			firstLargest = arr[i];
-		} else if (arr[i] > secondLargest) {
-			secondLargest = arr[i]
+		} else if (arr[i] > secondLargestNumber) {
+			secondLargestNumber = arr[i]
 		}
 	}
 
